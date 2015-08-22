@@ -1,0 +1,132 @@
+DATA DICTIONARY - 2006 HOUSING
+#Remove and edit based on the 'real' data.
+
+RT 1
+ Record Type
+ H .Housing Record or Group Quarters Unit
+SERIALNO 7
+ Housing unit/GQ person serial number
+ 0000001..9999999 .Unique identifier assigned within
+ .state
+DIVISION 1
+ Division code
+ 0 .Puerto Rico
+ 1 .New England (Northeast region)
+ 2 .Middle Atlantic (Northeast region)
+ 3 .East North Central (Midwest region)
+ 4 .West North Central (Midwest region)
+ 5 .South Atlantic (South region)
+ 6 .East South Central (South region)
+ 7 .West South Central (South Region)
+ 8 .Mountain (West region)
+ 9 .Pacific (West region)
+PUMA 5
+ Public use microdata area code (PUMA)
+ Designates area of 100,000 or more population. Use with ST for unique
+ code.
+ 00100..08200
+ 77777 .combination of 01801, 01802, and 01905 in Louisiana
+REGION 1
+ Region code
+ 1 .Northeast
+ 2 .Midwest
+ 3 .South
+ 4 .West
+ 9 .Puerto Rico
+ST 2
+ State Code
+ 01 .Alabama/AL
+ 02 .Alaska/AK
+ 04 .Arizona/AZ
+ 05 .Arkansas/AR
+ 06 .California/CA
+ 08 .Colorado/CO
+ 09 .Connecticut/CT
+ 10 .Delaware/DE
+ 11 .District of Columbia/DC
+ 12 .Florida/FL
+ 13 .Georgia/GA
+ 15 .Hawaii/HI
+ 16 .Idaho/ID
+ 17 .Illinois/IL
+ 18 .Indiana/IN
+ 19 .Iowa/IA
+ 20 .Kansas/KS
+ 21 .Kentucky/KY
+ 22 .Louisiana/LA
+ 23 .Maine/ME 
+ 24 .Maryland/MD
+ 25 .Massachusetts/MA
+ 26 .Michigan/MI
+ 27 .Minnesota/MN
+ 28 .Mississippi/MS
+ 29 .Missouri/MO
+ 30 .Montana/MT
+ 31 .Nebraska/NE
+ 32 .Nevada/NV
+ 33 .New Hampshire/NH
+ 34 .New Jersey/NJ
+ 35 .New Mexico/NM
+ 36 .New York/NY
+ 37 .North Carolina/NC
+ 38 .North Dakota/ND
+ 39 .Ohio/OH
+ 40 .Oklahoma/OK
+ 41 .Oregon/OR
+ 42 .Pennsylvania/PA
+ 44 .Rhode Island/RI
+ 45 .South Carolina/SC
+ 46 .South Dakota/SD
+ 47 .Tennessee/TN
+ 48 .Texas/TX
+ 49 .Utah/UT
+ 50 .Vermont/VT
+ 51 .Virginia/VA
+ 53 .Washington/WA
+ 54 .West Virginia/WV
+ 55 .Wisconsin/WI
+ 56 .Wyoming/WY
+ 72 .Puerto Rico/PR
+ADJUST 7
+ Adjustment factor for dollar amounts (6 implied decimal places)
+ 1015675 .2006 factor (1.015675)
+WGTP 4
+ Housing Weight
+ 0001..9999 .Integer weight of housing unit
+NP 2
+ Number of person records following this housing record
+ 00 .Vacant unit
+ 01 .One person record (one person in household or
+ .any person in group quarters)
+ 02..20 .Number of person records (number of persons in
+ .household)
+TYPE 1
+ Type of unit
+ 1 .Housing unit
+ 2 .Institutional group quarters
+ 3 .Noninstitutional group quarters
+ACR 1
+ Lot size
+ b .N/A (GQ/not a one-family house or mobile home)
+ 1 .House on less than one acre
+ 2 .House on one to less than ten acres
+ 3 .House on ten or more acres
+AGS 1
+ Sales of Agriculture Products
+ b .N/A (less than 1 acre/GQ/vacant/
+ .2 or more units in structure)
+ 1 .None
+ 2 .$ 1 - $ 999
+ 3 .$ 1000 - $ 2499
+ 4 .$ 2500 - $ 4999
+ 5 .$ 5000 - $ 9999
+ 6 .$10000+
+BDS 1
+ Bedrooms
+ b .N/A (GQ)
+ 0 .No bedrooms
+ 1 .1 Bedroom
+ 2 .2 Bedrooms
+ 3 .3 Bedrooms
+ 4 .4 Bedrooms
+ 5 .5 or more bedrooms
